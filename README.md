@@ -14,7 +14,7 @@ It doesn't matter how you do it; in paint, photoshop, on paper or on a napkin. B
 
 Head over to the *main.js* file and start fleshing out your components. We've added the root component for you, and called React.render(), which renders this component into the DOM in the specified container.   
 
-As you see, we've hard coded the todo items into a variable named *todos*, and passed it to the TodoApp component as a props.
+We've also hard coded the todo items into a variable named *todos*, and passed it to the TodoApp component as a props, so that you have some data to populate your static app with.
 
 When you code a dynamic version, you'll discard this props variable and rather have the todo items in a state. 
 
@@ -31,7 +31,10 @@ When you code a dynamic version, you'll discard this props variable and rather h
 
 ## Identify the state
 
-Now, you'll need to figure out what the app's state will consist of, and where it should live. See the React docs [explanation](https://facebook.github.io/react/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state) for more info on how to do this.
+Now, you'll need to figure out what the app's state will consist of, and where it should live. See the React docs [explanation](https://facebook.github.io/react/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state) for more info on how to do this. Outtake:  
+
+*To build your app correctly, you first need to think of the minimal set of mutable state that your app needs. The key here is DRY: Don't Repeat Yourself. Figure out what the absolute minimal representation of the state of your application needs to be and compute everything else you need on-demand. For example, if you're building a TODO list, just keep an array of the TODO items around; don't keep a separate state variable for the count. Instead, when you want to render the TODO count, simply take the length of the TODO items array.*
+
 
 ## Fetch the input
 
