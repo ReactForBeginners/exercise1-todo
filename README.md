@@ -4,9 +4,24 @@ This exercise will teach you how to create a simple Todo app using React. You'll
 
 To get started, clone this repo, and follow the instructions below:
 
-## Breaking the UI into components
+## Break the UI into components
 
-Check out this tutorial on how to do this, if you're uncertain.
+Facebook provides a good tutorial on how to break your UI into components in the official React [docs.](http://facebook.github.io/react/docs/thinking-in-react.html#step-1-break-the-ui-into-a-component-hierarchy)  
+
+It doesn't matter how you do it; in paint, photoshop, on paper or on a napkin. But make sure you've decided on a component structure before you start coding.
+
+## Build a static version
+
+Head over to the main.js file and start fleshing out your components. We've added the root component for you, and called React.render(), which renders this component into the DOM in the specified container.
+
+
+	var TodoApp = React.createClass({
+		render: function(){
+			return(<div>Hello World</div>);
+		},
+	});
+
+	React.render(<TodoApp />, document.getElementById('container'));
 
 
 
