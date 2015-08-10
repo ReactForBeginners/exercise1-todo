@@ -1,10 +1,14 @@
 # Todo app
 
-This exercise will teach you how to create a simple Todo app using React. You'll learn about components, state, props and also how to change the state based on user input.
+This exercise will teach you how to create a simple Todo app using React. You'll learn about components, state, props and also how to change the state based on user input. Clone this repo and follow the instructions below to get started.
 
-To get started, clone this repo, and follow the instructions below:
+## Running the app
 
-## Break the UI into components
+With some browsers (e.g. Safari, Firefox) you can run the app by simply dragging *index.html* into the browser. If you're using Chrome, you'll most likely have to start a simple server. Head over to the projects directory with your Command Line Interface and type the following:
+
+	python -m SimpleHTTPServer
+
+## Breaking the UI into components
 
 Facebook provides a good tutorial on how to break your UI into components in the official React [docs.](http://facebook.github.io/react/docs/thinking-in-react.html#step-1-break-the-ui-into-a-component-hierarchy)  
 
