@@ -1,6 +1,6 @@
 # Todo app
 
-This exercise will teach you how to create a simple Todo app using React. You'll learn about components, state, props and also how to change the state based on user input.
+This exercise will teach you how to create a simple Todo app using React, like [this one.](http://reactforbeginners.github.io/exercise1-todo/) You'll learn about components, state, props and also how to change the state based on user input.
 
 To get started, clone this repo, and follow the instructions below:
 
