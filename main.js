@@ -3,8 +3,8 @@ var TodoList = React.createClass({
 		
 		var todos = this.props.todos.map(function(todo,index){
 			return <li key={index}>
-						<span onClick={this.props.handleRemove.bind(null, index)}> ✗ </span>
 						{todo}
+						<span onClick={this.props.handleRemove.bind(null, index)} style={color:'red'}> ✗ </span>
 					</li>
 		}.bind(this));
 
