@@ -6,4 +6,4 @@ var TodoApp = React.createClass({
     },
 });
 
-React.render(<TodoApp todos={TODOS} />, document.getElementById('container'));
+React.render(<TodoApp todos={TODOS} />, document.getElementById('content'));

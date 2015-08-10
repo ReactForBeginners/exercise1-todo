@@ -16,7 +16,7 @@ It doesn't matter how you do it; in paint, photoshop, on paper or on a napkin. B
 
 Head over to the *main.js* file and start fleshing out your components. We've added the root component for you, and called React.render(), which renders this component into the DOM in the specified container.   
 
-We've also hard coded the todo items into a variable named *todos*, and passed it to the TodoApp component as a props, so that you have some data to populate your static app with.
+We've also hard coded the todo items into a variable named *TODOS*, and passed it to the TodoApp component as a props, so that you have some data to populate your static app with.
 
 When you code a dynamic version, you'll discard this props variable and rather have the todo items in a state. 
 
@@ -28,7 +28,7 @@ When you code a dynamic version, you'll discard this props variable and rather h
 		},
 	});
 
-	React.render(<TodoApp todos={TODOS} />, document.getElementById('container'));
+	React.render(<TodoApp todos={TODOS} />, document.getElementById('content'));
 
 
 ## Identifying the state
