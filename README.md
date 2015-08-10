@@ -37,11 +37,16 @@ Now, you'll need to figure out what the app's state will consist of, and where i
 
 ## Fetching user input
 
-We recommend you to use [controlled components](https://facebook.github.io/react/docs/forms.html#controlled-components) in order to get the users input, and setting the state on the [onChange](https://facebook.github.io/react/docs/forms.html#interactive-props) event.
+We recommend that you use [controlled components](https://facebook.github.io/react/docs/forms.html#controlled-components) when working with the input field, and setting the state with the [onChange](https://facebook.github.io/react/docs/forms.html#interactive-props) event.
 
 Alternatively you can use *refs* and *findDOMNode*. However, this techinque will be covered in exercise 2, so use controlled components in order to learn as much as possible.
 
 ## Stretch goals:
 
-* Enable the user to create multiple lists  
-The user clicks *New list*, and a new list appears on the page, which he/her can add and delete items on.
+If you finish up before the deadline, use the remaning time to add extra features to the app.
+
+* **Multiple lists**  
+The user clicks *New list*, and a new list appears on the page, which he/her can add and delete items on.  
+
+* **Edit existing items**  
+The user clicks on an item, enabling it to be modified. 
