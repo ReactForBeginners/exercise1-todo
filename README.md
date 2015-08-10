@@ -10,6 +10,8 @@ Facebook provides a good tutorial on how to break your UI into components in the
 
 It doesn't matter how you do it; in paint, photoshop, on paper or on a napkin. But make sure you've decided on a component structure before you start coding.
 
+![image](https://github.com/ReactForBeginners/exercise1-todo/blob/gh-pages/todo.png?raw=true)
+
 ## Building a static version
 
 Head over to the *main.js* file and start fleshing out your components. We've added the root component for you, and called React.render(), which renders this component into the DOM in the specified container.   
