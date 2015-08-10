@@ -1,9 +1,12 @@
 var TodoList = React.createClass({
 	render: function(){
+		var s = {
+			color: 'red'
+		};
 		var todos = this.props.todos.map(function(todo,index){
 			return <li key={index} className="listItem" >
 						{todo}
-						<span onClick={this.props.handleRemove.bind(null, index)} style={{color:'red'}}> ✗ </span>
+						<span onClick={this.props.handleRemove.bind(null, index)} style={s}> ✗ </span>
 					</li>
 		}.bind(this));
 
