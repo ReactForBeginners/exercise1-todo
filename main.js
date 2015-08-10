@@ -2,7 +2,7 @@ var TODOS = ["buy food", "make food", "eat food"];
 
 var TodoApp = React.createClass({
     render: function(){
-        return(<div>Todo app: {this.props.todos}</div>);
+        return(<div>{this.props.todos}</div>);
     },
 });
 

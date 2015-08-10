@@ -18,15 +18,15 @@ We've also hard coded the todo items into a variable named *todos*, and passed i
 
 When you code a dynamic version, you'll discard this props variable and rather have the todo items in a state. 
 
-	var todos = ["buy food", "make food", "eat food"];
+	var TODOS = ["buy food", "make food", "eat food"];
 
 	var TodoApp = React.createClass({
 		render: function(){
-			return(<div>Hello World</div>);
+			return(<div>{this.props.todos}</div>);
 		},
 	});
 
-	React.render(<TodoApp todos={todos} />, document.getElementById('container'));
+	React.render(<TodoApp todos={TODOS} />, document.getElementById('container'));
 
 
 ## Identifying the state
@@ -43,7 +43,7 @@ Alternatively you can use *refs* and *findDOMNode*. However, this techinque will
 
 ## Stretch goals:
 
-If you finish up before the deadline, use the remaning time to add extra features to the app.
+If you finish up before the deadline, use the remaining time to add extra features to the app.
 
 * **Multiple lists**  
 The user clicks *New list*, and a new list appears on the page, which he/her can add and delete items on.  
