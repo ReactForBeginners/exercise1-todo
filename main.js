@@ -4,7 +4,7 @@ var TodoList = React.createClass({
 			listItem = {listStyleType: 'none'};
 
 		var todos = this.props.todos.map(function(todo,index){
-			return <li key={index} style={listItem} >
+			return <li key={index} className="listItem" >
 						{todo}
 						<span onClick={this.props.handleRemove.bind(null, index)} style={deleteSymbol}> ✗ </span>
 					</li>
