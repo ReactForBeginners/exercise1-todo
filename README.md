@@ -10,7 +10,7 @@ Facebook provides a good tutorial on how to break your UI into components in the
 
 It doesn't matter how you do it; in paint, photoshop, on paper or on a napkin. But make sure you've decided on a component structure before you start coding.
 
-## Build a static version
+## Building a static version
 
 Head over to the *main.js* file and start fleshing out your components. We've added the root component for you, and called React.render(), which renders this component into the DOM in the specified container.   
 
@@ -29,17 +29,15 @@ When you code a dynamic version, you'll discard this props variable and rather h
 	React.render(<TodoApp todos={todos} />, document.getElementById('container'));
 
 
-## Identify the state
+## Identifying the state
 
 Now, you'll need to figure out what the app's state will consist of, and where it should live. See the React docs [explanation](https://facebook.github.io/react/docs/thinking-in-react.html#step-3-identify-the-minimal-but-complete-representation-of-ui-state) for more info on how to do this. Outtake:  
 
-*To build your app correctly, you first need to think of the minimal set of mutable state that your app needs. The key here is DRY: Don't Repeat Yourself. Figure out what the absolute minimal representation of the state of your application needs to be and compute everything else you need on-demand. For example, if you're building a TODO list, just keep an array of the TODO items around; don't keep a separate state variable for the count. Instead, when you want to render the TODO count, simply take the length of the TODO items array.*   
+*To build your app correctly, you first need to think of the minimal set of mutable state that your app needs. The key here is DRY: Don't Repeat Yourself. Figure out what the absolute minimal representation of the state of your application needs to be and compute everything else you need on-demand.*   
 
-If you're using a controlled component, you'll also need to have the text in the input field as a part of your state.
+## Fetching user input
 
-## Fetch the input
-
-We recommend you to use [controlled components](https://facebook.github.io/react/docs/forms.html#controlled-components) in order to get the users input, setting the state on the onChange event.
+We recommend you to use [controlled components](https://facebook.github.io/react/docs/forms.html#controlled-components) in order to get the users input, and setting the state on the [onChange](https://facebook.github.io/react/docs/forms.html#interactive-props) event.
 
 Alternatively you can use *refs* and *findDOMNode*. However, this techinque will be covered in exercise 2, so use controlled components in order to learn as much as possible.
 
