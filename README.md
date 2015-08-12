@@ -14,11 +14,11 @@ It doesn't matter how you do it; in paint, photoshop, on paper or on a napkin. B
 
 ## Building a static version
 
-Head over to the *main.js* file and start fleshing out your components. We've added the root component for you, and called React.render(), which renders this component into the DOM in the specified container.   
+Head over to the *main.js* file and start coding your components, withut worrying about user input and state changes. We've added the root component for you, and called React.render(), which renders this component into the DOM in the specified container.   
 
 We've also hard coded the todo items into a variable named *TODOS*, and passed it to the TodoApp component as a props, so that you have some data to populate your static app with.
 
-When you code a dynamic version, you'll discard this props variable and rather have the todo items in a state. 
+When you code a dynamic version, you'll discard this props variable and rather place your todo items in a state. 
 
 	var TODOS = ["buy food", "make food", "eat food"];
 
