@@ -45,6 +45,11 @@ We recommend you to use [controlled components](https://facebook.github.io/react
 
 Alternatively you can use *refs* and *findDOMNode*. However, this techinque will be covered in exercise 2, so use controlled components in order to learn as much as possible.
 
+## key
+
+When you're creating components dynamically, each of them need a unique "key" attribute. See an example of this in the [lecture 1 notes](https://github.com/ReactForBeginners/course-overview/tree/master/lecture1) or [here.](https://facebook.github.io/react/docs/multiple-components.html#dynamic-children)
+
+
 ## Stretch goals:
 
 * Enable the user to create multiple lists  
