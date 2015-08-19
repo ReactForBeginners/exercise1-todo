@@ -61,13 +61,13 @@ var TodoApp = React.createClass({
 
 	handleClick: function(){
 		this.setState({
-			todos: this.state.todos.concat(this.state.text),
+			todos: this.state.todos.concat([this.state.text]),
 			text: ''
 		});
 	},
 
 	handleRemove: function(index){
-		var newTodos = this.state.todos;
+		var newTodos = this.state.todos.slice();
 		newTodos.splice(index,1);
 		this.setState({
 			todos: newTodos
