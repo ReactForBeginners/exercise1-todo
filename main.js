@@ -1,15 +1,27 @@
+'use strict';
+
+var TodoItem = React.createClass({
+	render: function(){
+		return(
+			<li>
+				{this.props.todo}
+				<span onClick={this.props.handleRemove.bind(null, this.props.index)} > ✗ </span>
+			</li>
+		);
+	}
+});
+
 var TodoList = React.createClass({
 	render: function(){
-		var s = {
-			color: 'red'
-		};
-		var todos = this.props.todos.map(function(todo,index){
-			return <li key={index} className="listItem" >
-						{todo}
-						<span onClick={this.props.handleRemove.bind(null, index)} style={s}> ✗ </span>
-					</li>
-		}.bind(this));
 
+		var todos = this.props.todos.map(function(todo,index){
+			return <TodoItem 
+						key={index} 
+						todo={todo} 
+						index={this.props.index} 
+						handleRemove={this.props.handleRemove} />
+		}.bind(this));
+		
 		return (
 			<ul>
 				{todos}
@@ -57,7 +69,7 @@ var TodoApp = React.createClass({
 	},
 
 	handleRemove: function(index){
-		newTodos = this.state.todos;
+		var newTodos = this.state.todos;
 		newTodos.splice(index,1);
 		this.setState({
 			todos: newTodos
