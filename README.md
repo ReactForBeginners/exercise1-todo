@@ -2,7 +2,14 @@
 
 This exercise will teach you how to create a simple Todo app using React, like [this one.](http://reactforbeginners.github.io/exercise1-todo/) You'll learn about components, state, props and also how to change the state based on user input.
 
-To get started, clone this repo, and follow the instructions below:
+To get started, clone this repo. We've linked to the React CDN for you in the HTML file, plus the JSX transformer. Your React components ought to be added in main.js.
+
+## Running the app  
+
+Head over to the directory with your Command Line Interface and type the following:
+
+	python -m SimpleHTTPServer
+
 
 ## Break the UI into components
 
