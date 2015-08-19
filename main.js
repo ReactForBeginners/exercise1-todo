@@ -2,6 +2,8 @@
 
 var TodoItem = React.createClass({
 	render: function(){
+		console.log('this.props.todo:', this.props.todo);
+		console.log('this.props.index:', this.props.index);
 		return(
 			<li>
 				{this.props.todo}
@@ -18,7 +20,7 @@ var TodoList = React.createClass({
 			return <TodoItem 
 						key={index} 
 						todo={todo} 
-						index={this.props.index} 
+						index={index} 
 						handleRemove={this.props.handleRemove} />
 		}.bind(this));
 		
