@@ -1,12 +1,22 @@
 <!-- DOCTYPE HTML -->
 <html>
-    <head>
-        <title>Todo app</title>
-    </head>
-    <body>
-        <div id="content"></div>
-        <script src="https://fb.me/react-with-addons-0.13.3.js"></script>
-        <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
-        <script type="text/jsx" src="main.js">
-        </script>
+<head>
+<title>Todo app</title>
+</head>
+<body>
+<div id="content"></div>
+<script src="https://fb.me/react-with-addons-0.13.3.js"></script>
+<script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
+<script type="text/jsx" src="main.js">
+var TODOS = ["buy food", "make food", "eat food"];
+
+var TodoApp = React.createClass({
+    render: function(){
+        return(<div>{this.props.todos}</div>);
+    },
+});
+
+React.render(<TodoApp todos={TODOS} />, document.getElementById('content'));
+
+</script>
 </html>
