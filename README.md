@@ -6,9 +6,7 @@ To get started, clone this repo. We've linked to the React CDN for you in the HT
 
 ## Running the app  
 
-Head over to the directory with your Command Line Interface and type the following:
-
-	python -m SimpleHTTPServer
+Simply open the index.html file in the browser to run the app. We're coding everything in that file, so there's no need to run a server.
 
 
 ## Break the UI into components
